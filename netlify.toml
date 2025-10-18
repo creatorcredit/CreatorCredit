@@ -1,7 +1,6 @@
 [build]
-  # No build step: publish the repository root so Netlify serves `index.html` from the repo root.
-  command = ""
-  publish = "/"
+  # Publish the repository root. Setting publish to "." is explicit and avoids issues with a leading slash.
+  publish = "."
 
 [context.production.environment]
   NODE_ENV = "production"
