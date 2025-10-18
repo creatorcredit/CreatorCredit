@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact — CreatorCredit</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Contact</h1>
+      </header>
+      <section class="content">
+        <div class="card">
+          <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
+            <label>
+              Your name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Your email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="6" required></textarea>
+            </label>
+            <p><button type="submit">Send</button></p>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+  </html>
