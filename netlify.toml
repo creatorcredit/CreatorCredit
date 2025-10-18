@@ -1,6 +1,7 @@
 [build]
-  # Publish the repository root. Setting publish to "." is explicit and avoids issues with a leading slash.
-  publish = "."
+  # Use Vite build on Netlify: install dependencies, run the build, and publish `dist`.
+  command = "npm run build"
+  publish = "dist"
 
 [context.production.environment]
   NODE_ENV = "production"
